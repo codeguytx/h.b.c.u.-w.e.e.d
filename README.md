@@ -15,16 +15,11 @@ HBCU-WEED is a real-time comedy network made for people who know what it feel li
 - Watch and archive the wildest, smartest comedy online
 - All numbers are real. All content is protected.
 
-## This Ain’t No Gimmick
 
-We don’t inflate views.
-We don’t fake the feedback.
-We don’t write for algorithms.
-We write for us.
 
 ## Licensing
 
-All rights reserved. You can’t copy, remix, repost, or resell anything on here without approval. 
+All rights reserved under Samira Tamira Cortez Copyrights house and Lil Stonie Danks LLC . You can’t copy, remix, repost, or resell anything on here without approval. 
 
 HBCU-WEED is protected under a custom private license. Contact: madeintaiwansomehow@gmail.com
 """

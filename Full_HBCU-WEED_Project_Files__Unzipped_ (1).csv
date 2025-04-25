@@ -1,0 +1,87 @@
+File,Content
+README.md,"# HBCU-WEED
+
+This the rawest comedy spot alive. Ain’t no filters, no pandering, just pure Black energy. Sketches hit like your uncle wildin’ at the cookout. Truths cut like your grandma’s side eye. It’s smart, it’s stupid, it’s loud, it’s layered. If you ain’t laughin’, you ain’t listenin’. And if you soft, this ain’t for you.
+
+## What It Is
+
+HBCU-WEED is a real-time comedy network made for people who know what it feel like to grow up laughin’ through pain and cookin’ up genius from nothin’. It’s a sketch engine. A content archive. A space to create, submit, and wild out with your people. Everything you see is written with soul and served hot.
+
+## How It Work
+
+- Submit your sketch ideas straight through the site
+- Get original content generated live by the sketch engine
+- Watch and archive the wildest, smartest comedy online
+- All numbers are real. All content is protected.
+
+## This Ain’t No Gimmick
+
+We don’t inflate views.
+We don’t fake the feedback.
+We don’t write for algorithms.
+We write for us.
+
+## Licensing
+
+All rights reserved. You can’t copy, remix, repost, or resell anything on here without approval. You see it, you respect it, or you log out.
+
+HBCU-WEED is protected under a custom private license. Contact: official@hbcuweed.com"
+LICENSE,"HBCU-WEED LICENSE
+
+All Rights Reserved.
+
+Copyright (c) 2025 HBCU-WEED
+
+This software and all its associated content (including but not limited to code, graphics, videos, audio, scripts, and sketches) are the intellectual property of HBCU-WEED and its creator. Unauthorized use, reproduction, distribution, or modification of this software or any part of it is strictly prohibited.
+
+You may:
+- View and interact with the content on officially authorized platforms.
+- Share direct links to public content hosted on HBCU-WEED platforms, with credit.
+
+You may not:
+- Copy, modify, or distribute any part of this project or its content.
+- Use the project or any of its components for commercial purposes.
+- Integrate any of its code, ideas, or generated content into other platforms, products, or projects.
+
+Permission for any use not expressly granted herein must be requested in writing and approved by the copyright holder.
+
+This license is effective as of the repository’s initial commit and remains in force until explicitly terminated by the creator.
+
+For licensing inquiries, contact: official@hbcuweed.com"
+.gitignore,"node_modules
+.next
+out
+dist
+.env"
+package.json,"{
+  ""name"": ""hbcu-weed"",
+  ""version"": ""1.0.0"",
+  ""scripts"": {
+    ""dev"": ""next dev"",
+    ""build"": ""next build"",
+    ""start"": ""next start""
+  },
+  ""dependencies"": {
+    ""next"": ""latest"",
+    ""react"": ""latest"",
+    ""react-dom"": ""latest""
+  }
+}"
+vercel.json,"{
+  ""version"": 2,
+  ""builds"": [{ ""src"": ""next.config.js"", ""use"": ""@vercel/next"" }]
+}"
+api/engine.js,"export default function handler(req, res) { res.status(200).json({ message: 'Sketch Engine Active' }); }"
+api/analytics.js,"export default function handler(req, res) { res.status(200).json({ views: 0 }); }"
+api/upload.js,"export default function handler(req, res) { res.status(200).json({ upload: 'success' }); }"
+pages/index.js,export default function Home() { return <div>Welcome to HBCU-WEED</div>; }
+pages/about.js,export default function About() { return <div>About the Movement</div>; }
+pages/archive.js,export default function Archive() { return <div>All Sketches Archive</div>; }
+pages/contact.js,export default function Contact() { return <div>Contact Us</div>; }
+pages/submit.js,export default function Submit() { return <div>Submit Your Sketch</div>; }
+pages/video.js,export default function Video() { return <div>Video Viewer</div>; }
+pages/analytics.js,export default function Analytics() { return <div>Site Analytics</div>; }
+lib/sketchEngine.js,export function generateSketch(input) { return `Generated sketch for ${input}`; }
+lib/utils.js,export function formatDate(date) { return date.toISOString(); }
+lib/videoHandler.js,export function processVideo(file) { return `Processing ${file}`; }
+styles/global.css,body { font-family: sans-serif; background: #000; color: #fff; }
